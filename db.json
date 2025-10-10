@@ -1,0 +1,468 @@
+{
+  "admins": [
+    {
+      "id": "799",
+      "admin_id": "Reddy799",
+      "password": "Reddy@Travel"
+    }
+  ],
+  "users": [
+    {
+      "id": "650",
+      "user_id": "Sampu630",
+      "user_name": "Sampath",
+      "password": "Sampu@Preethi",
+      "email": "Sampu@hero.com"
+    },
+    {
+      "id": "fbe6",
+      "user_id": "Arjun123",
+      "user_name": "Arjun",
+      "password": "Arjun@junnu",
+      "email": "arjun123@gmail.com"
+    }
+  ],
+  "places": [
+    {
+      "id": "1",
+      "name": "Eiffel Tower",
+      "description": "Iconic iron tower offering panoramic views of Paris.A world-famous iron lattice tower located on the Champ de Mars in Paris. Built in 1889, it offers breathtaking panoramic views of the city and stands as a global symbol of France and romanticism.",
+      "images": [
+        "/EiffelTower.jpg"
+      ],
+      "videos": [
+        "/eiffeltower.mp4"
+      ],
+      "location": {
+        "city": "Paris",
+        "country": "France"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Taj Mahal",
+      "description": "Marble mausoleum built by Mughal emperor Shah Jahan.The Taj Mahal is a stunning white marble mausoleum built by the Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, who died during childbirth in 1631. Construction of the monument began in 1632 and was largely completed by 1648, though some parts took longer.",
+      "images": [
+        "/Tajmahal1.jpg",
+        "/Tajmahal2.jpg"
+      ],
+      "videos": [
+        "/tajmahal.mp4"
+      ],
+      "location": {
+        "city": "Agra",
+        "country": "India"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Great Wall of China",
+      "description": "Ancient wall stretching across northern China built for protection.A massive ancient fortification stretching thousands of kilometers across northern China, built over centuries to protect Chinese states from invasions. It's one of the most iconic symbols of China's historical strength and resilience.",
+      "images": [
+        "/Greatwallofchina2.jpg",
+        "/Greatwallofchina3.jpg"
+      ],
+      "videos":[
+        "/Greatwallofchina.mp4"
+      ],
+      "location": {
+        "city": "Beijing",
+        "country": "China"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Machu Picchu",
+      "description": "15th-century Inca citadel located in the Andes Mountains.An ancient Inca citadel nestled high in the Andes Mountains. Built in the 15th century, it's known for its sophisticated dry-stone construction and mystical location above the Urubamba River valley.",
+      "images": [
+        "/Machupicchu1.jpg",
+        "/Machupicchu2.jpg"
+      ],
+      "videos":[
+        "/Machupicchu.mp4"
+      ],
+      "location": {
+        "city": "Cusco",
+        "country": "Peru"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Christ the Redeemer",
+      "description": "Large statue of Jesus Christ overlooking Rio de Janeiro.A towering statue of Jesus Christ standing atop Mount Corcovado, overlooking Rio. It symbolizes peace and Christianity and is one of the New Seven Wonders of the World.",
+      "images": [
+        "/Christtheredeemer3.jpg"
+      ],
+      "videos":[
+        "/Christtheredeemer.mp4"
+      ],
+      "location": {
+        "city": "Rio de Janeiro",
+        "country": "Brazil"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Colosseum",
+      "description": "Ancient Roman gladiatorial arena in the heart of Rome.An ancient amphitheater and gladiatorial arena located in the heart of Rome. Built in 80 AD, it hosted epic battles and events, showcasing Roman engineering and entertainment.",
+      "images": [
+        "/Colosseum1.jpg"
+      ],
+      "videos":[
+        "/Colosseum.mp4"
+      ],
+      "location": {
+        "city": "Rome",
+        "country": "Italy"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Petra",
+      "description": "Historical and archaeological city famous for its rock-cut architecture.An archaeological city carved into rose-red rock cliffs, Petra was once the capital of the Nabataean Kingdom. It’s famous for its rock-cut architecture like Al-Khazneh (The Treasury).",
+      "images": [
+        "/Petra1.jpg"
+      ],
+      "videos":[
+        "/Petra.mp4"
+      ],
+      "location": {
+        "city": "Petra",
+        "country": "Jordan"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Angkor Wat",
+      "description": "Temple complex in Cambodia and one of the largest religious monuments.The world’s largest religious monument, originally built as a Hindu temple and later transformed into a Buddhist temple. Its grandeur reflects the rich Khmer Empire heritage.",
+      "images": [
+        "/Angkorwat1.jpg"
+      ],
+      "videos":[
+        "/Angkorwat.mp4"
+      ],
+      "location": {
+        "city": "Siem Reap",
+        "country": "Cambodia"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Sydney Opera House",
+      "description": "Multi-venue performing arts centre at Sydney harbour.An architectural marvel with sail-like design, this performing arts center hosts world-class concerts, theatre, and opera events on Sydney Harbour.",
+      "images": [
+        "/Sydneyoperahouse2.jpg"
+      ],
+      "videos": [
+        "/sydneyoperahouse.mp4"
+      ],
+      "location": {
+        "city": "Sydney",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "10",
+      "name": "Golden Gate Bridge",
+      "description": "Suspension bridge spanning Golden Gate strait in San Francisco.A majestic suspension bridge connecting San Francisco to Marin County. Its Art Deco design and iconic orange color make it one of the most photographed bridges in the world.",
+      "images": [
+       "/Goldengatebridge2.jpg"
+      ],
+      "videos": [
+        "/goldengatebridge.mp4"
+      ],
+      "location": {
+        "city": "San Francisco",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Pyramids of Giza",
+      "description": "Ancient pyramids near Cairo, Egypt, one of the Seven Wonders.Ancient pyramid structures built as tombs for the Pharaohs over 4,500 years ago. They are the only remaining structure of the original Seven Wonders of the Ancient World.",
+      "images": [
+        "/pyramidsofgiza2.jpg"
+      ],
+      "videos":[
+        "/pyramidsofgiza.mp4"
+      ],
+      "location": {
+        "city": "Giza",
+        "country": "Egypt"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Statue of Liberty",
+      "description": "Colossal statue on Liberty Island, a symbol of freedom in USA.A colossal neoclassical sculpture gifted by France to the USA in 1886. It stands as a symbol of freedom, democracy, and hope for immigrants arriving in America.",
+      "images": [
+        "/Statueofliberty1.jpg"
+      ],  
+      "videos":[
+        "/Statueofliberty.mp4"
+      ],
+      "location": {
+        "city": "New York",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Niagara Falls",
+      "description": "Massive waterfalls on the border of USA and Canada.A spectacular group of three waterfalls straddling the U.S.–Canada border. Known for its immense power and beauty, it’s a major tourist attraction and hydroelectric source.",
+      "images": [
+        "/Niagarafalls1.jpg"
+      ],
+      "videos": [
+        "/niagarafalls.mp4"
+      ],
+      "location": {
+        "city": "Niagara",
+        "country": "Canada / USA"
+      }
+    },
+    {
+      "id": "15",
+      "name": "Great Barrier Reef",
+      "description": "World’s largest coral reef system located in Australia.The world’s largest coral reef system, home to an astonishing variety of marine life. It's visible from space and a haven for divers and conservationists.",
+      "images": [
+        "/Greatbarrierreef1.jpg"
+      ],
+      "videos": [
+        "/greatbarrierreef.mp4"
+      ],
+      "location": {
+        "city": "Queensland",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "16",
+      "name": "Santorini",
+      "description": "Picturesque Greek island known for white architecture and sunsets.A picturesque Greek island known for its whitewashed houses, blue-domed churches, and breathtaking sunsets. Built on a volcanic caldera, it’s a popular romantic getaway.",
+      "images": [
+        "/Santorini1.jpg",
+        "/Santorini2.jpg"
+      ],
+      "videos": [
+        "/santorini.mp4"
+      ],
+      "location": {
+        "city": "Santorini",
+        "country": "Greece"
+      }
+    },
+   
+    {
+      "id": "18",
+      "name": "Yellowstone National Park",
+      "description": "U.S. first national park known for wildlife and geothermal features.The first national park in the U.S. and in the world, known for its geothermal wonders like Old Faithful geyser, diverse wildlife, and dramatic canyons.",
+      "images": [
+        "/Yellowstonenationalpark1.jpg"
+      ],
+      "videos":[
+        "/Yellowstonenationalpark.mp4"
+      ],
+      "location": {
+        "city": "Wyoming",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "19",
+      "name": "Uluru (Ayers Rock)",
+      "description": "Massive sandstone monolith sacred to Indigenous Australians.A sacred sandstone monolith of great spiritual importance to the Anangu people. Uluru stands isolated in the desert and changes color with the light.",
+      "images": [
+        "/Uluru (Ayers Rock).jpg"
+      ],
+      "videos":["/Uluru (Ayers Rock).mp4"],
+      "location": {
+        "city": "Northern Territory",
+        "country": "Australia"
+      }
+    },
+    {
+      "id": "20",
+      "name": "Grand Canyon",
+      "description": "Famous canyon carved by the Colorado River in USA.A vast canyon carved by the Colorado River, known for its layered red rock formations. It's a geological wonder and a popular hiking and sightseeing destination.",
+      "images": [
+        "/GrandCanyon1.jpg"
+      ],
+      "videos": [
+        "/grandcanyon.mp4"
+      ],
+      "location": {
+        "city": "Arizona",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "21",
+      "name": "Serengeti National Park",
+      "description": "World-renowned wildlife reserve in Tanzania.Famous for the annual wildebeest migration and rich biodiversity, Serengeti is one of Africa’s top safari destinations and a UNESCO World Heritage Site.",
+      "images": [
+        "/SerengetiNationalPark1.jpg"
+      ],
+      "videos":[
+        "/SerengetiNationalPark.mp4"
+      ],
+      "location": {
+        "city": "Serengeti",
+        "country": "Tanzania"
+      }
+    },
+    {
+      "id": "22",
+      "name": "Galápagos Islands",
+      "description": "Unique archipelago known for its biodiversity.An isolated archipelago with unique wildlife that inspired Charles Darwin’s theory of evolution. It remains a pristine paradise for researchers and nature lovers.",
+      "images": [
+        "/GalápagosIslands1.jpg"
+      ],
+      "videos":[
+        "/GalápagosIslands.mp4"
+      ],
+      "location": {
+        "city": "Galápagos Islands",
+        "country": "Ecuador"
+      }
+    },
+    {
+      "id": "23",
+      "name": "Hagia Sophia",
+      "description": "Historic architectural wonder in Istanbul, once a church, mosque, and museum.A magnificent structure that has served as a church, mosque, and museum over its 1,500-year history. It reflects the confluence of Christian and Islamic cultures.",
+      "images": [
+        "/HagiaSophia1.jpg",
+        "/HagiaSophia2.jpg"
+      ],
+      "videos": [
+        "/HagiaSophia.mp4"
+      ],
+      "location": {
+        "city": "Istanbul",
+        "country": "Turkey"
+      }
+    },
+    {
+      "id": "24",
+      "name": "Burj Khalifa",
+      "description": "Currently the tallest building in the world.Currently the tallest building in the world, soaring over 828 meters. It dominates the Dubai skyline and represents modern engineering brilliance.",
+      "images": [
+        "/BurjKhalifa1.jpg"
+      ],
+      "videos": [
+        "/BurjKhalifa.mp4"
+      ],
+      "location": {
+        "city": "Dubai",
+        "country": "UAE"
+      }
+    },
+    {
+      "id": "25",
+      "name": "Acropolis of Athens",
+      "description": "Ancient citadel on a rocky outcrop above Athens.An ancient citadel featuring the Parthenon and other classical structures. It overlooks Athens and symbolizes the birth of democracy and Western civilization.",
+      "images": [
+        "/AcropolisofAthens1.jpg"
+      ],
+      "videos":[
+        "/AcropolisofAthens.mp4"
+      ],
+      "location": {
+        "city": "Athens",
+        "country": "Greece"
+      }
+    },
+    {
+      "id": "26",
+      "name": "Stonehenge",
+      "description": "Prehistoric monument of standing stones in England.A prehistoric circle of standing stones believed to have been used for rituals or astronomical purposes. It remains one of Britain’s greatest mysteries.",
+      "images": [
+        "/Stonehenge1.jpg"
+      ],
+      "videos":[
+        "/Stonehenge.mp4"
+      ],
+      "location": {
+        "city": "Wiltshire",
+        "country": "England"
+      }
+    },
+    {
+      "id": "27",
+      "name": "Christ Church Cathedral",
+      "description": "Historic cathedral in Christchurch, New Zealand.A Gothic Revival Anglican cathedral in Christchurch. Despite damage from earthquakes, it remains a key symbol of the city’s history and resilience.",
+      "images": [
+        "/ChristChurchCathedral2.jpg"
+      ],
+      "videos": [
+        "/ChristChurchCathedral.mp4"
+      ],
+      "location": {
+        "city": "Christchurch",
+        "country": "New Zealand"
+      }
+    },
+    {
+      "id": "28",
+      "name": "Banff National Park",
+      "description": "Picturesque Canadian Rockies wilderness.A stunning national park in the Canadian Rockies, known for turquoise lakes (like Lake Louise), alpine scenery, and abundant wildlife.",
+      "images": [
+        "/BanffNationalPark1.jpg"
+      ],
+      "videos":[
+        "/BanffNationalPark2.mp4"
+      ],
+      "location": {
+        "city": "Alberta",
+        "country": "Canada"
+      }
+    },
+    {
+      "id": "29",
+      "name": "Mount Fuji",
+      "description": "Iconic volcano & symbol of Japan.An iconic, snow-capped volcano and spiritual symbol of Japan. It is a UNESCO site and a popular hiking and cultural pilgrimage destination.",
+      "images": [
+        "/MountFuji1.jpg",
+        "/MountFuji2.jpg"
+      ],
+      "videos":[
+        "/MountFuji.mp4"
+      ],
+      "location": {
+        "city": "Shizuoka / Yamanashi",
+        "country": "Japan"
+      }
+    },
+    {
+      "id": "30",
+      "name": "Victoria Falls",
+      "description": "One of the largest and most famous waterfalls in the world on the Zambia/Zimbabwe border.One of the largest and most powerful waterfalls on Earth. Known locally as The Smoke That Thunders, it’s a breathtaking natural wonder.",
+      "images": [
+        "/VictoriaFalls1.jpg",
+        "/VictoriaFalls2.jpg"
+      ],
+      "videos":[
+        "/VictoriaFalls.mp4"
+      ],
+      "location": {
+        "city": "Victoria Falls",
+        "country": "Zambia / Zimbabwe"
+      }
+    },
+    {
+      "id": "8572",
+      "name": "Visakhapatnam",
+      "description": "The city of love destiny.Also called Visakhapatnam Beach, it is a coastal area along the Bay of Bengal, known for its serene beaches, seafood, and romantic ambiance. Often referred to as the “City of Destiny.”",
+      "images": [
+        "/VizagBeach1.jpg"
+      ],
+      "videos": [
+        "/VizagBeach.mp4"
+      ],
+      "location": {
+        "city": "Visakhapatnam",
+        "country": "India"
+      }
+    }
+  ]
+}
