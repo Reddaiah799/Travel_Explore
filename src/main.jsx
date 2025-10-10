@@ -4,14 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AdminLogin } from './components/TravelExplore/admin-login.js';
-import { AdminDashboard } from './components/TravelExplore/admin-dashboard.js';
-import { UserLogin } from './components/TravelExplore/user-login.js';
+import { AdminLogin } from './components/TravelExplore/admin-login.jsx';
+import { AdminDashboard } from './components/TravelExplore/admin-dashboard.jsx';
+import { UserLogin } from './components/TravelExplore/user-login.jsx';
 import { UserRegister } from './components/TravelExplore/user-register.jsx';
-import { UserDashboard } from './components/TravelExplore/user-dashboard.js';
+import { UserDashboard } from './components/TravelExplore/user-dashboard.jsx';
 import { PlaceDetails } from './components/TravelExplore/PlaceDetails.jsx';
+
 
 createRoot(document.getElementById('root')).render(
   
@@ -28,4 +27,5 @@ createRoot(document.getElementById('root')).render(
     </Routes>
     </BrowserRouter>
   </StrictMode>
+
 );
