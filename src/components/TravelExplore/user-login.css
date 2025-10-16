@@ -1,5 +1,5 @@
 .bg-banner1{
-    background-image: url('sunset.jpg');
+    background-image: url('/sunset.jpg');
     height: 100vh;
   background-size: cover;
   background-position: center;
@@ -12,4 +12,5 @@
   border: 1px solid rgba(62, 199, 67, 0.605);
   border-radius: 10px;
 background-color: rgba(40, 170, 57, 0.511);
+
 }
