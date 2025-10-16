@@ -7,7 +7,7 @@ export function UserDashboard() {
   const [places, setPlaces] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/places")
+    axios.get('https://travel-explore-api-data.onrender.com/places') 
       .then(response => {
         setPlaces(response.data);
       })
