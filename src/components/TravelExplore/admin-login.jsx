@@ -13,7 +13,7 @@ export function AdminLogin(){
             "password":""
         },
         onSubmit: (admin)=>{
-            axios.get('http://localhost:3000/admins')
+           axios.get('https://travel-explore-api-data.onrender.com/admins')
             .then(response=>{
                 var result=response.data.find(user=> user.admin_id===admin.admin_id);
                 if(result){
