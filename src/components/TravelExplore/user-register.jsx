@@ -7,46 +7,39 @@ import './user-register.css'
 
 export function UserRegister() {
   const [status, setStatus] = useState("");
-  const [errorClass, setErrorClass] = useState("");
-
+  const [statusClass, setStatusClass] = useState("");
   const navigate = useNavigate();
 
   const formik = useFormik({
-    initialValues: {
-      user_id: "",
-      user_name: "",
-      password: "",
-      email: ""
-    },
+    initialValues: { user_id: "", user_name: "", password: "", email: "" },
     onSubmit: (user) => {
-      axios.post(`http://localhost:3000/users`, user).then(() => {
-        alert("User Registered Successfully!");
-        navigate("/user-login");
-      }).catch((error) => {
-        console.error("Registration failed:", error);
-        alert("Failed to register. Please try again.");
-      });
-    }
+      if (status === "User Id Taken - Try Another") {
+        alert("Please choose a different User ID");
+        return;
+      }
+      axios.post(`https://travel-explore-api-data.onrender.com/users`, user)
+        .then(() => {
+          alert("User Registered Successfully!");
+          navigate("/user-login");
+        })
+        .catch(() => alert("Registration failed. Try again."));
+    },
   });
 
-  function VerifyUserId(e) {
-    const enteredId = e.target.value;
-    formik.handleChange(e); 
-
-    axios.get(`http://localhost:3000/users`)
-      .then(response => {
-        const userExists = response.data.some(user => user.user_id === enteredId);
-        if (userExists) {
-          setStatus("User Id Taken - Try Another");
-          setErrorClass("text-danger");
-        } else {
-          setStatus("User Id Available");
-          setErrorClass("text-success");
-        }
+  function checkUserId(e) {
+    const userId = e.target.value.trim();
+    formik.handleChange(e);
+    if (!userId) {
+      setStatus("");
+      return;
+    }
+    axios.get(`https://travel-explore-api-data.onrender.com/users`)
+      .then(res => {
+        const taken = res.data.some(u => u.user_id === userId);
+        setStatus(taken ? "User Id Taken - Try Another" : "User Id Available");
+        setStatusClass(taken ? "text-danger" : "text-success");
       })
-      .catch(error => {
-        console.error("Failed to verify user id:", error);
-      });
+      .catch(() => setStatus("Error checking User ID"));
   }
 
   return (
@@ -59,86 +52,30 @@ export function UserRegister() {
             <dd>
               <TextField
                 className="w-100"
-                onChange={VerifyUserId}
-                value={formik.values.user_id}
                 name="user_id"
                 label="User Id"
                 variant="standard"
+                onChange={checkUserId}
+                value={formik.values.user_id}
                 InputLabelProps={{ style: { color: 'orange' } }}
-                sx={{
-                  "& .MuiInputBase-input": {
-                    color: "darkblue",
-                  },
-                  '& .MuiInput-underline:before': {
-                    borderBottomColor: '#008080',
-                  },
-                  '& .MuiInput-underline:hover:before': {
-                    borderBottomColor: '#004C4C',
-                  },
-                  '& .MuiInput-underline:after': {
-                    borderBottomColor: '#008080',
-                  },
-                  '& .MuiInputLabel-root': {
-                    color: 'rgba(0, 128, 128, 1)',
-                  },
-                }}
+                sx={{ "& .MuiInputBase-input": { color: "darkblue" } }}
               />
-              <small className={errorClass}>{status}</small>
+              <small className={statusClass}>{status}</small>
             </dd>
-
-            <dt style={{ color: 'Black' }}>User Name</dt>
-            <dd>
-              <input
-                type="text"
-                onChange={formik.handleChange}
-                name="user_name"
-                className="form-control"
-                value={formik.values.user_name}
-                required
-              />
-            </dd>
-
-            <dt style={{ color: 'white' }}>Email</dt>
-            <dd>
-              <input
-                type="email"
-                onChange={formik.handleChange}
-                name="email"
-                className="form-control"
-                value={formik.values.email}
-                required
-              />
-            </dd>
-
-            <dt style={{ color: 'pink' }}>Password</dt>
-            <dd>
-              <input
-                type="password"
-                onChange={formik.handleChange}
-                name="password"
-                className="form-control"
-                value={formik.values.password}
-                required
-              />
-            </dd>
+            <dt>User Name</dt>
+            <dd><input name="user_name" className="form-control" onChange={formik.handleChange} value={formik.values.user_name} required /></dd>
+            <dt>Email</dt>
+            <dd><input type="email" name="email" className="form-control" onChange={formik.handleChange} value={formik.values.email} required /></dd>
+            <dt>Password</dt>
+            <dd><input type="password" name="password" className="form-control" onChange={formik.handleChange} value={formik.values.password} required /></dd>
           </dl>
-
-          <button type="submit" className="btn btn-success bi bi-person-plus-fill">
-            Register
-          </button>
-
-          <Link to="/" className="btn btn-danger mx-2 bi bi-x-circle-fill">
-            Cancel
-          </Link>
-
+          <button type="submit" className="btn btn-success bi bi-person-plus-fill">Register</button>
+          <Link to="/" className="btn btn-danger mx-2 bi bi-x-circle-fill">Cancel</Link>
           <div className="text-center mt-3">
             <Link to="/admin-login" className="btn btn-link" style={{ color: 'black' }}>
-              <i className="bi bi-person-bounding-box me-2"></i>
               Admin Login
             </Link>
-
             <Link to="/user-login" className="btn btn-link" style={{ color: "whitesmoke" }}>
-             <i className="bi bi-box-arrow-in-right me-2"></i>
               User Login
             </Link>
           </div>
