@@ -1,5 +1,5 @@
 .banner{
-  background-image: url('flowers.jpg');
+  background-image: url('/flowers.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -17,4 +17,5 @@ h3{
 li{
   color:yellow;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
