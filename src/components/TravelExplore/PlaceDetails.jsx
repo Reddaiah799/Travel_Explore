@@ -19,7 +19,9 @@ export function PlaceDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/places/${id}`);
+        // NEW (PUBLIC) CODE:
+const res = await axios.get(`https://travel-explore-api-data.onrender.com/places/${id}`);
+
         setPlace(res.data);
 
         const { city, country } = res.data.location;
