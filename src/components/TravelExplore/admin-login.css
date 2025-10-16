@@ -1,5 +1,5 @@
 .bg-banner{
-  background-image: url('Beautiful.jpg');
+  background-image: url('/Beautiful.jpg');
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -12,4 +12,5 @@
   border: 1px solid rgba(62, 199, 67, 0.605);
   border-radius: 10px;
 background-color: rgba(66, 203, 189, 0.323);
+
 }
